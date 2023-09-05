@@ -327,7 +327,6 @@
 .logo_text {
     font-size: 12px;
     font-style: normal;
-
 }
 
 .logos {
@@ -337,6 +336,10 @@
     gap: 15px;
     padding: 5px 5px;
     border: 2px solid transparent;
+}
+
+.logos img {
+    max-width: 100%;
 }
 
 
@@ -513,7 +516,17 @@
         display: block;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 10px;
+        align-items: center;
+        justify-items: center;
+        gap: 30px;
+    }
+
+    .logo_text {
+        font-size: 9px;
+    }
+
+    .logos img {
+        max-width: 100%;
     }
 
     /* start footer */
@@ -553,10 +566,6 @@
 
     /* start banner */
 
-    .banner {
-        flex-direction: column;
-    }
-
     .banner_text {
         min-width: 100%;
         text-align: center;
@@ -581,9 +590,6 @@
     }
 
     /* start instant section */
-    .instant_images {
-        /* min-width: 100%; */
-    }
 
     .horse_img {
         min-width: 100%;
@@ -592,6 +598,15 @@
     .play_instantly_text {
         max-width: 100%;
         text-align: center;
+    }
+
+    /* start logos */
+    .logos img {
+        max-width: 100%;
+    }
+
+    .logo_text {
+        font-size: 12px;
     }
 
 }
