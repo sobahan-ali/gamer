@@ -261,7 +261,10 @@
 .logos_container {
     margin-top: 150px;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    /* grid-template-columns: repeat(5, 1fr); */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-items: center;
+    /* grid-auto-flow: row; */
     gap: 40px;
 }
 
