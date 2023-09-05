@@ -45,6 +45,10 @@
     font-weight: 700;
 }
 
+.common_text_right {
+    text-align: right;
+}
+
 /* end utilities */
 
 /* -----------start navbar ----------------- */
@@ -205,8 +209,47 @@
     line-height: 30px;
 }
 
-/* -----------start Online Games Funny Videos ----------------- */
+/* -----------end Online Games Funny Videos ----------------- */
 
+/* --------------- start play instantly ----------------- */
+.play_instantly_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.play_instantly_text {
+    width: 450px;
+    padding: 50px;
+}
+
+.play_instantly_img {
+    position: relative;
+
+
+}
+
+.horse_img img {
+    max-width: 100%;
+
+}
+
+.my_tom_img img {
+    max-width: 100%;
+}
+
+.my_tom_img {
+    position: absolute;
+    bottom: -100px;
+    left: -150px;
+}
+
+
+/* -----------end play instantly ---------------------- */
+
+/* -----------start navbar ----------------- */
+/* -----------end navbar ----------------- */
 /* -----------start navbar ----------------- */
 /* -----------end navbar ----------------- */
 
@@ -222,7 +265,8 @@
         margin-top: 24px;
     }
 
-    .banner {
+    .banner,
+    .play_instantly_container {
         flex-direction: column-reverse;
         gap: 10px;
     }
@@ -245,8 +289,15 @@
         width: 400px;
     }
 
-    .gammer_text {
+    .gammer_text,
+    .horse_img img {
         min-width: 100%;
+
+    }
+
+    .my_tom_img img {
+        width: 318px;
+        height: 350px;
     }
 
     .online_games_container {
@@ -255,6 +306,12 @@
 
     .online_game_img img {
         max-width: 100%;
+    }
+
+
+
+    .play_instantly_container {
+        justify-content: center;
     }
 }
 
