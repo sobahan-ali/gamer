@@ -28,6 +28,23 @@
 
 }
 
+.regular_color {
+    color: #534C64;
+}
+
+.common_linear_text {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.common_title {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+}
+
 /* end utilities */
 
 /* -----------start navbar ----------------- */
@@ -79,7 +96,9 @@
     margin: 0 20px;
 }
 
-/* -----------end banner ----------------- */
+/* -----------end navbar ----------------- */
+
+/* -----------start banner ----------------- */
 .banner {
     display: flex;
     align-items: center;
@@ -125,12 +144,68 @@
     height: 550px;
 }
 
-
 /* -----------end banner ----------------- */
-/* -----------end navbar ----------------- */
 
-/* -----------start navbar ----------------- */
-/* -----------end navbar ----------------- */
+/* -----------start we are gamer ----------------- */
+.gammer_container {
+    background-color: #fffafa;
+}
+
+.gammer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.gammer_text {
+    /* width: 50%; */
+    text-align: right;
+}
+
+.gammer_img img {
+    width: 850px;
+}
+
+.gammer_title {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.gamer_desc {
+    color: #534C64;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+
+/* -----------end we are gamer ----------------- */
+
+/* -----------start Online Games Funny Videos ----------------- */
+.online_games_container {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.online_game_img img {
+    max-width: 100%;
+}
+
+.common_text {
+    color: #534C64;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+/* -----------start Online Games Funny Videos ----------------- */
 
 /* -----------start navbar ----------------- */
 /* -----------end navbar ----------------- */
@@ -157,7 +232,29 @@
     }
 
     .banner_img img {
+        max-width: 100%;
+        height: 500px;
+    }
+
+    .gammer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gammer_img img {
+        width: 400px;
+    }
+
+    .gammer_text {
         min-width: 100%;
+    }
+
+    .online_games_container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .online_game_img img {
+        max-width: 100%;
     }
 }
 
@@ -184,6 +281,21 @@
         max-width: 100%;
         height: 500px;
     }
+
+
+    .gammer_img img {
+        max-width: 50%;
+    }
+
+    .online_games_container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .online_game_img img {
+        min-width: 100%;
+    }
+
+
 }
 
 /* -----------end tablet responsive ----------------- */
