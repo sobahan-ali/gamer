@@ -248,8 +248,27 @@
 
 /* -----------end play instantly ---------------------- */
 
-/* -----------start navbar ----------------- */
-/* -----------end navbar ----------------- */
+/* -----------start logos  ----------------- */
+.logos_container {
+    margin-top: 150px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 40px;
+}
+
+.logo_text {
+    font-size: 12px;
+    font-style: normal;
+
+}
+
+.logos {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+/* -----------end logos ----------------- */
 /* -----------start navbar ----------------- */
 /* -----------end navbar ----------------- */
 
@@ -313,6 +332,12 @@
     .play_instantly_container {
         justify-content: center;
     }
+
+    .logos_container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
 }
 
 /* -----------end mobile responsive ----------------- */
