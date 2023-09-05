@@ -224,6 +224,14 @@
     overflow: hidden;
 }
 
+.watch_now {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
 .play_icon {
     position: absolute;
     top: 50%;
@@ -250,11 +258,15 @@
 }
 
 .video_player:hover .online_game_img img {
-    opacity: 0.5;
+    opacity: 0.3;
 }
 
 .video_player:hover .play_icon i {
     color: #534C64;
+}
+
+.video_player:hover .watch_now {
+    display: block;
 }
 
 /* -----------end Online Games Funny Videos ----------------- */
